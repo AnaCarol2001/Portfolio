@@ -1,9 +1,5 @@
-function App() {
-  return (
-    <>
-      <h1 className="text-8xl">Hey Portfolio</h1>
-    </>
-  );
-}
+import Home from "./pages/Home";
 
-export default App;
+export default function App() {
+  return <Home />;
+}
