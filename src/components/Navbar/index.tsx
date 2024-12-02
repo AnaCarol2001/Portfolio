@@ -9,16 +9,16 @@ export default function Navbar() {
 
   if (isMobile) {
     return (
-      <header className="z-50 fixed w-full glass flex justify-between items-center p-3 rounded-b-xl">
-        <a href="#" className="font-poppins font-bold text-main-purple ">
+      <header className="glass fixed z-50 flex w-full items-center justify-between rounded-b-xl p-3">
+        <a href="#" className="font-poppins font-bold text-main-purple">
           AnaCarolina
         </a>
-        <div className="flex gap-4 items-center">
+        <div className="flex items-center gap-4">
           <form>
             <select
               name="language"
               id="language"
-              className="w-[4.5ch] bg-transparent border border-black rounded-md cursor-pointer"
+              className="w-[4.5ch] cursor-pointer rounded-md border border-black bg-transparent"
             >
               <option value="English">EN</option>
               <option value="Portuguese-BR">PT-BR</option>
@@ -29,12 +29,12 @@ export default function Navbar() {
             {isNavOpen && (
               <motion.nav
                 id="main-nav"
-                className=" absolute top-0 right-0 bg-black w-full max-w-[80vw] h-screen pt-20 p-5"
+                className="absolute right-0 top-0 h-screen w-full max-w-[80vw] bg-black p-5 pt-20"
                 initial={{ x: "50%" }}
                 animate={{ x: "10%" }}
                 exit={{ x: "110%" }}
               >
-                <ul className="text-white font-poppins font-semibold text-5xl space-y-5">
+                <ul className="space-y-5 font-poppins text-5xl font-semibold text-white">
                   <li>
                     <a className="active:text-main-purple" href="#about">
                       Sobre
@@ -61,8 +61,8 @@ export default function Navbar() {
   }
 
   return (
-    <header className="glass z-50 fixed top-0 left-0 right-0 max-w-6xl mx-auto flex items-center justify-between py-4 px-8 rounded-b-3xl text-lg">
-      <a href="#" className="font-poppins font-bold text-main-purple ">
+    <header className="glass fixed left-0 right-0 top-0 z-50 mx-auto flex max-w-6xl items-center justify-between rounded-b-3xl px-8 py-4 text-lg">
+      <a href="#" className="font-poppins font-bold text-main-purple">
         AnaCarolina
       </a>
       <nav id="main-nav" className="font-semibold">
@@ -80,12 +80,12 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <div className="flex items-center justify-between  gap-6">
+      <div className="flex items-center justify-between gap-6">
         <form>
           <select
             name="language"
             id="language"
-            className="w-[4.5ch] bg-transparent border border-black rounded-md cursor-pointer"
+            className="w-[4.5ch] cursor-pointer rounded-md border border-black bg-transparent"
           >
             <option value="English">EN</option>
             <option value="Portuguese-BR">PT-BR</option>
@@ -93,7 +93,7 @@ export default function Navbar() {
         </form>
         <a
           href="mailto:"
-          className="border border-main-purple py-2 px-4 rounded-lg font-bold text-main-purple"
+          className="rounded-lg border border-main-purple px-4 py-2 font-bold text-main-purple"
         >
           Contact Me
         </a>

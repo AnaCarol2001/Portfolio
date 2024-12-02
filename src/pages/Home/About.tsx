@@ -1,14 +1,14 @@
-import Tag from "./ui/Tag";
+import Tag from "../../components/ui/Tag";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="relative  px-4 py-20 md:py-40 text-white before:absolute before:inset-0 before:z-[-1] before:bg-main-purple before:-skew-y-3 scroll-m-12"
+      className="relative scroll-m-12 px-4 py-20 text-white before:absolute before:inset-0 before:z-[-1] before:-skew-y-3 before:bg-main-purple md:py-40"
     >
-      <div className="grid gap-8 justify-center md:grid-cols-2 max-w-6xl mx-auto">
-        <div className="space-y-4 max-w-prose">
-          <h2 className="font-poppins font-semibold text-5xl">About me</h2>
+      <div className="mx-auto grid max-w-6xl justify-center gap-8 md:grid-cols-2">
+        <div className="max-w-prose space-y-4">
+          <h2 className="font-poppins text-5xl font-semibold">About me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto velit
             illum vero quibusdam doloremque consectetur eveniet, totam expedita
@@ -23,22 +23,16 @@ export default function About() {
           </p>
         </div>
         <div className="space-y-4 md:justify-self-center">
-          <h3 className="font-poppins font-semibold text-5xl">Techs</h3>
+          <h3 className="font-poppins text-5xl font-semibold">Techs</h3>
           <ul className="flex flex-wrap gap-4">
             <li>
-              <Tag bgColor="white" textColor="main-purple">
-                HTML
-              </Tag>
+              <Tag variant="white">HTML</Tag>
             </li>
             <li>
-              <Tag bgColor="white" textColor="main-purple">
-                CSS
-              </Tag>
+              <Tag variant="white">CSS</Tag>
             </li>
             <li>
-              <Tag bgColor="white" textColor="main-purple">
-                JavaScript
-              </Tag>
+              <Tag variant="white">JavaScript</Tag>
             </li>
           </ul>
         </div>

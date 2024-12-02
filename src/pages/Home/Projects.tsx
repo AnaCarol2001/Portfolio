@@ -37,10 +37,10 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="text-center max-w-6xl mx-auto mb-14 pt-24 md:pt-36"
+      className="mx-auto mb-14 max-w-6xl pt-24 text-center md:pt-36"
     >
-      <div className="px-4 mb-14 lg:sticky lg:top-24">
-        <h2 className="font-poppins font-semibold text-main-purple text-5xl mb-5 ">
+      <div className="mb-14 px-4 lg:sticky lg:top-24">
+        <h2 className="mb-5 font-poppins text-5xl font-semibold text-main-purple">
           Projects
         </h2>
         <p className="text-lg">

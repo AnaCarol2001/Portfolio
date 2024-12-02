@@ -23,24 +23,24 @@ export default function Hamburger({ onClick, isNavOpen, ...props }: Hamburger) {
   return (
     <button
       type="button"
-      className=" p-2 aspect-square"
+      className="aspect-square p-2"
       onClick={onClick}
       {...props}
     >
       <span className="sr-only">{isNavOpen ? "Close" : "Menu"}</span>
       <motion.div
         aria-hidden="true"
-        className={`relative bg-black w-6 h-0.5`}
+        className={`relative h-0.5 w-6 bg-black`}
         initial="close"
         animate={isNavOpen ? "open" : "close"}
         variants={middleBarAnimation}
       >
         <motion.div
-          className="absolute bg-black inset-0 translate-y-1.5"
+          className="absolute inset-0 translate-y-1.5 bg-black"
           variants={topBarAnimation}
         ></motion.div>
         <motion.div
-          className="absolute bg-black inset-0 -translate-y-1.5"
+          className="absolute inset-0 -translate-y-1.5 bg-black"
           variants={bottomBarAnimation}
         ></motion.div>
       </motion.div>

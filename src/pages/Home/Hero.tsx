@@ -1,11 +1,11 @@
-import { Email, GitHub, LinkedIn } from "../assets/icons";
+import { Email, GitHub, LinkedIn } from "../../assets/icons";
 
 export default function Hero() {
   return (
-    <div className="relative h-screen md:max-h-[700px] pt-20 pb-16 px-6 grid content-evenly justify-items-center gap-6 md:gap-14 md:grid-cols-2 md:justify-items-end  xl:max-h-none lg:max-w-6xl lg:mx-auto xl:px-0">
-      <div className="order-2 md:order-1 text-center grid gap-4 justify-items-center md:text-left md:justify-items-start md:content-center">
-        <h1 className="font-poppins font-semibold text-black text-5xl md:text-7xl lg:text-8xl ">
-          <span className="block font-sofiaSans font-semibold text-main-purple text-2xl md:text-3xl ">
+    <div className="relative grid h-screen content-evenly justify-items-center gap-6 px-6 pb-16 pt-20 md:max-h-[700px] md:grid-cols-2 md:justify-items-end md:gap-14 lg:mx-auto lg:max-w-6xl xl:max-h-none xl:px-0">
+      <div className="order-2 grid justify-items-center gap-4 text-center md:order-1 md:content-center md:justify-items-start md:text-left">
+        <h1 className="font-poppins text-5xl font-semibold text-black md:text-7xl lg:text-8xl">
+          <span className="block font-sofiaSans text-2xl font-semibold text-main-purple md:text-3xl">
             Front-end developer
           </span>{" "}
           Ana Carolina
@@ -13,7 +13,7 @@ export default function Hero() {
         <p className="text-xl">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, nemo.
         </p>
-        <div className="flex gap-4 items-center text-main-purple">
+        <div className="flex items-center gap-4 text-main-purple">
           <a aria-label="GitHub" href="http://">
             <GitHub />
           </a>
@@ -25,7 +25,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="relative order-1 max-w-sm aspect-square md:mr-10">
+      <div className="relative order-1 aspect-square max-w-sm md:mr-10">
         <img
           className="rounded-2xl"
           src="https://avatars.githubusercontent.com/u/62663206?v=4"
@@ -33,11 +33,11 @@ export default function Hero() {
         />
         <div
           aria-hidden="true"
-          className="z-[-1] absolute w-full h-full left-4 top-4 border-2 border-main-purple border-solid border-sm rounded-2xl"
+          className="border-sm absolute left-4 top-4 z-[-1] h-full w-full rounded-2xl border-2 border-solid border-main-purple"
         ></div>
         <div
           aria-hidden="true"
-          className="z-[-2] absolute w-full h-full right-4 bottom-4 lg:right-0 lg:bottom-0 lg:left-8 lg:top-8 border-2 border-main-purple border-solid border-sm rounded-2xl"
+          className="border-sm absolute bottom-4 right-4 z-[-2] h-full w-full rounded-2xl border-2 border-solid border-main-purple lg:bottom-0 lg:left-8 lg:right-0 lg:top-8"
         ></div>
       </div>
       {/* <div

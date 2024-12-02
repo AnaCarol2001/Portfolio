@@ -2,7 +2,7 @@
 @tailwind components;
 
 .glass {
-  @apply bg-white/50 backdrop-filter backdrop-blur-md;
+  @apply bg-white/50 backdrop-blur-md backdrop-filter;
   box-shadow: 0 -1px 8px rgba(255, 255, 255, 0.7) inset;
 }
 
