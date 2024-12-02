@@ -1,29 +1,19 @@
-const bgVariants = {
-  "main-purple": "bg-main-purple",
-  white: "bg-white",
+import { ComponentProps } from "react";
+
+interface TagProps extends ComponentProps<"span"> {
+  variant?: "main-purple" | "white";
+}
+
+const TagVariants: Record<NonNullable<TagProps["variant"]>, string> = {
+  "main-purple": "bg-main-purple text-white",
+  white: "bg-white text-main-purple",
 };
 
-const textVariants = {
-  "main-purple": "text-main-purple",
-  white: "text-white",
-};
-
-type TagProps = {
-  children: string;
-  bgColor?: keyof typeof bgVariants;
-  textColor?: keyof typeof textVariants;
-};
-
-export default function Tag({
-  bgColor = "main-purple",
-  textColor = "white",
-  children,
-}: TagProps) {
+export default function Tag({ variant = "main-purple", ...props }: TagProps) {
   return (
     <span
-      className={`${bgVariants[bgColor]} ${textVariants[textColor]} inline-block px-2 py-1 md:py-2 md:px-4 font-bold rounded-lg text-nowrap`}
-    >
-      {children}
-    </span>
+      className={`${TagVariants[variant]}} inline-block text-nowrap rounded-lg px-2 py-1 font-bold md:px-4 md:py-2`}
+      {...props}
+    />
   );
 }
