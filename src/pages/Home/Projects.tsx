@@ -1,6 +1,6 @@
-import spaceImg from "../assets/spaceTourism.png";
-import easyBank from "../assets/Group 4.png";
-import countries from "../assets/Group 5.png";
+import spaceImg from "../../assets/spaceTourism.png";
+import easyBank from "../../assets/easyBankProject.png";
+import countries from "../../assets/countriesProject.png";
 import Card from "../../components/ui/Card";
 
 const projects = [
