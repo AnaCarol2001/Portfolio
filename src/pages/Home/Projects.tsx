@@ -49,9 +49,19 @@ export default function Projects() {
         </p>
       </div>
       <div className="grid gap-10 lg:gap-20">
-        <Card cardData={projects[0]} />
-        <Card cardData={projects[1]} deskVariant={2} />
-        <Card cardData={projects[2]} />
+        <Card
+          cardData={projects[0]}
+          className="bg-gradient-to-br from-slate-900 to-blue-900 lg:sticky lg:top-40"
+        />
+        <Card
+          cardData={projects[1]}
+          imageOrderDesktop="left"
+          className="bg-gradient-to-bl from-green-600 to-blue-800 lg:sticky lg:top-44"
+        />
+        <Card
+          cardData={projects[2]}
+          className="bg-gradient-to-br from-slate-900 to-slate-500 lg:sticky lg:top-48"
+        />
       </div>
     </section>
   );
