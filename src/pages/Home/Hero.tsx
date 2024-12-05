@@ -1,4 +1,4 @@
-import { Email, GitHub, LinkedIn } from "../../assets/icons";
+import { Email, GitHub, LinkedIn } from "@assets/icons";
 
 export default function Hero() {
   return (

@@ -1,6 +1,6 @@
+import { ArrowUp, Code } from "@assets/icons";
+import Tag from "@components/ui/Tag";
 import { twMerge } from "tailwind-merge";
-import { ArrowUp, Code } from "../../../assets/icons";
-import Tag from "../Tag";
 
 type CardData = {
   title: string;

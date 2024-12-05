@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useMediaQuery from "../../hooks/useMediaQuery";
+import useMediaQuery from "@hooks/useMediaQuery";
 import Button from "../ui/Button";
 import { AnimatePresence, motion } from "framer-motion";
 
