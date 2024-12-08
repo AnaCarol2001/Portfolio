@@ -1,0 +1,28 @@
+{
+  "links": {
+    "about": "sobre",
+    "projects": "projetos"
+  },
+  "hero": "Adoro aprender algo novo e estou sempre em busca de novos desafios.",
+  "about": {
+    "part1": "Oi! Eu sou Ana Carolina, uma desenvolvedora front-end, especializada em HTML, CSS e JavaScript. Estou continuamente aprimorando minhas habilidades com frameworks modernos como o React.",
+    "part2": "Embora eu esteja apenas começando minha jornada profissional, já desenvolvi alguns projetos pessoais, incluindo single-page apps e landing pages responsivos. Esses projetos aprimoraram minhas habilidades de resolução de problemas e me ensinaram a transformar designs em experiências funcionais e atraentes para os usuários.",
+    "part3": "Adoro aprender novas tecnologias e tenho como objetivo criar aplicações com códigos limpos, que são eficientes, acessíveis e que atendam às expectativas dos usuários. Estou animada para trazer meu entusiasmo e dedicação para uma equipe!"
+  },
+  "projects": {
+    "title": "Projetos",
+    "desc": "Transformando designs em Websites responsivos, acessíveis e com animações.",
+    "project1": {
+      "title": "Space Tourism - SPA",
+      "desc": "Este aplicativo web é uma aplicação de página única (SPA) totalmente responsiva, desenvolvida apenas com HTML, CSS e JavaScript, a partir de um design fornecido pelo Frontend Mentor, apresentando uma interface de usuário limpa e intuitiva. O aplicativo possui quatro páginas: Home, Destinations, Crew, e Technology, cada uma projetada para imergir os usuários em uma fascinante exploração espacial. Ele inclui navegação fluida, abas acessíveis via teclado e animações atraentes para melhorar a usabilidade e a interatividade."
+    },
+    "project2": {
+      "title": "EasyBank Landing Page",
+      "desc": "Este projeto consistiu na criação de uma landing page para o banco digital Easybank, utilizando um design fornecido pela Frontend Mentor. O foco principal foi na fidelidade ao layout e na implementação de animações que enriquecessem a interação do usuário. Desenvolvi a aplicação usando React, com estilização modular via Styled Components e animações utilizando Framer Motion para uma experiência visual mais fluida e interativa."
+    },
+    "project3": {
+      "title": "Where in the World? - SPA",
+      "desc": "Aplicação de página única (SPA) responsiva desenvolvida com React, TypeScript, React Router e React-query, estilizada com Tailwind CSS. O app integra a API REST Countries, permitindo que os usuários visualizem todos os países na página inicial, procurem por um país específico usando um componente de busca acessível (padrão Combobox) e filtrem os países por região. Os usuários podem clicar em um país para acessar uma página com informações detalhadas, aumentando a interatividade e o engajamento. Além disso, o app conta com um toggle de tema claro/escuro persistente, proporcionando uma experiência personalizada e fluida."
+    }
+  }
+}

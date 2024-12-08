@@ -2,10 +2,13 @@ import { useState } from "react";
 import useMediaQuery from "@hooks/useMediaQuery";
 import Button from "../ui/Button";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import LangSwitcher from "@components/Navbar/langSwitcher";
 
 export default function Navbar() {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const { t } = useTranslation();
 
   if (isMobile) {
     return (
@@ -14,16 +17,7 @@ export default function Navbar() {
           AnaCarolina
         </a>
         <div className="flex items-center gap-4">
-          <form>
-            <select
-              name="language"
-              id="language"
-              className="w-[4.5ch] cursor-pointer rounded-md border border-black bg-transparent"
-            >
-              <option value="English">EN</option>
-              <option value="Portuguese-BR">PT-BR</option>
-            </select>
-          </form>
+          <LangSwitcher />
 
           <AnimatePresence>
             {isNavOpen && (
@@ -37,12 +31,12 @@ export default function Navbar() {
                 <ul className="space-y-5 font-poppins text-5xl font-semibold text-white">
                   <li>
                     <a className="active:text-main-purple" href="#about">
-                      Sobre
+                      {t("links.about")}
                     </a>
                   </li>
                   <li>
                     <a className="active:text-main-purple" href="#projects">
-                      Projetos
+                      {t("links.projects")}
                     </a>
                   </li>
                 </ul>
@@ -69,28 +63,20 @@ export default function Navbar() {
         <ul className="flex gap-8">
           <li>
             <a className="active:text-main-purple" href="#about">
-              Sobre
+              {t("links.about")}
             </a>
           </li>
           <li>
             <a className="active:text-main-purple" href="#projects">
-              Projetos
+              {t("links.projects")}
             </a>
           </li>
         </ul>
       </nav>
 
       <div className="flex items-center justify-between gap-6">
-        <form>
-          <select
-            name="language"
-            id="language"
-            className="w-[4.5ch] cursor-pointer rounded-md border border-black bg-transparent"
-          >
-            <option value="English">EN</option>
-            <option value="Portuguese-BR">PT-BR</option>
-          </select>
-        </form>
+        <LangSwitcher />
+
         <a
           href="mailto:"
           className="rounded-lg border border-main-purple px-4 py-2 font-bold text-main-purple"

@@ -1,0 +1,28 @@
+{
+  "links": {
+    "about": "about",
+    "projects": "projects"
+  },
+  "hero": "Passionate about learning and always looking for new challenges ",
+  "about": {
+    "part1": "Hi! I am Ana Carolina, a front-end developer specializing in HTML, CSS, and JavaScript, and I am continuously enhancing my skills with modern frameworks like React.",
+    "part2": "Though I am just starting my professional journey, I have built several personal projects, including responsive single-page apps and landing pages. These projects have sharpened my problem-solving abilities and taught me how to turn design concepts into functional and engaging user experiences.",
+    "part3": "I love learning new technologies and aim to create applications with clean code that are efficient, accessible, and meet user expectations. I look forward to bringing my enthusiasm and dedication to a team!"
+  },
+  "projects": {
+    "title": "Projects",
+    "desc": "Turning designs into stunning, responsive, accessible, and animated web pages.",
+    "project1": {
+      "title": "Space Tourism - SPA",
+      "desc": "This web app is a fully responsive single-page application (SPA) built with pure HTML, CSS, and JavaScript, based on a design provided by Frontend Mentor, showcasing a clean and intuitive user interface. The app features four pages—Home, Destinations, Crew, and Technology—each designed to immerse users in the excitement of space exploration. It includes smooth navigation, keyboard-accessible tabs, and engaging animations to enhance usability and interactivity."
+    },
+    "project2": {
+      "title": "EasyBank Landing Page",
+      "desc": "This project involved creating a landing page for the digital bank Easybank, based on a design provided by Frontend Mentor. The main focus was on layout fidelity and implementing animations to enhance user interaction. I developed the application using React, with modular styling through Styled Components and animations powered by Framer Motion for a smoother and more interactive visual experience."
+    },
+    "project3": {
+      "title": "Where in the World? - SPA",
+      "desc": "Responsive single-page application (SPA) built with React, TypeScript, React Router, and React-query, styled using Tailwind CSS. The app integrates the REST Countries API, allowing users to view all countries on the home page, search for a specific country using an accessible search component (Combobox pattern), and filter countries by region. Users can click on a country to access a detailed information page, enhancing interactivity and engagement. Additionally, the app features a persisted light/dark theme toggle, providing a personalized and seamless user experience."
+    }
+  }
+}

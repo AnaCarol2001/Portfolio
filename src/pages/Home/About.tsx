@@ -1,6 +1,8 @@
 import Tag from "@components/ui/Tag";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <section
       id="about"
@@ -9,18 +11,9 @@ export default function About() {
       <div className="mx-auto grid max-w-6xl justify-center gap-8 md:grid-cols-2">
         <div className="max-w-prose space-y-4">
           <h2 className="font-poppins text-5xl font-semibold">About me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto velit
-            illum vero quibusdam doloremque consectetur eveniet, totam expedita
-            ut provident! Neque molestiae est nesciunt dignissimos aspernatur
-            nisi cumque distinctio aliquam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto velit
-            illum vero quibusdam doloremque consectetur eveniet, totam expedita
-            ut provident! Neque molestiae est nesciunt dignissimos aspernatur
-            nisi cumque distinctio aliquam.
-          </p>
+          <p>{t("about.part1")}</p>
+          <p>{t("about.part2")}</p>
+          <p>{t("about.part3")}</p>
         </div>
         <div className="space-y-4 md:justify-self-center">
           <h3 className="font-poppins text-5xl font-semibold">Techs</h3>
@@ -33,6 +26,12 @@ export default function About() {
             </li>
             <li>
               <Tag variant="white">JavaScript</Tag>
+            </li>
+            <li>
+              <Tag variant="white">ReactJs</Tag>
+            </li>
+            <li>
+              <Tag variant="white">Tailwind</Tag>
             </li>
           </ul>
         </div>

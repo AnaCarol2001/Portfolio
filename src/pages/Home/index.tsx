@@ -2,8 +2,10 @@ import Navbar from "@components/Navbar";
 import About from "./About";
 import Hero from "./Hero";
 import Projects from "./Projects";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <div className="relative overflow-clip">
       <div aria-hidden="true" className="-z-50 overflow-hidden">
@@ -23,12 +25,12 @@ export default function Home() {
       <footer className="glass mx-auto grid min-h-[70vh] max-w-6xl content-between rounded-t-2xl px-4 pb-4 pt-16 font-poppins text-xl font-semibold md:text-2xl lg:px-16">
         <div className="space-y-4 md:flex md:justify-between">
           <nav>
-            <ul className="space-y-4">
+            <ul className="space-y-4 capitalize">
               <li>
-                <a href="#about">About</a>
+                <a href="#about"> {t("links.about")}</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">{t("links.projects")}</a>
               </li>
             </ul>
           </nav>

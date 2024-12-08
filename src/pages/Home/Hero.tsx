@@ -1,6 +1,8 @@
 import { Email, GitHub, LinkedIn } from "@assets/icons";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <div className="relative grid h-screen content-evenly justify-items-center gap-6 px-6 pb-16 pt-20 md:max-h-[700px] md:grid-cols-2 md:justify-items-end md:gap-14 lg:mx-auto lg:max-w-6xl xl:max-h-none xl:px-0">
       <div className="order-2 grid justify-items-center gap-4 text-center md:order-1 md:content-center md:justify-items-start md:text-left">
@@ -10,9 +12,7 @@ export default function Hero() {
           </span>{" "}
           Ana Carolina
         </h1>
-        <p className="text-xl">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, nemo.
-        </p>
+        <p className="text-xl">{t("hero")}</p>
         <div className="flex items-center gap-4 text-main-purple">
           <a aria-label="GitHub" href="http://">
             <GitHub />

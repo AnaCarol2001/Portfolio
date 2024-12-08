@@ -1,10 +1,13 @@
 import { ArrowUp, Code } from "@assets/icons";
 import Tag from "@components/ui/Tag";
+import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 
 type CardData = {
-  title: string;
-  description: string;
+  translationKeys: {
+    title: string;
+    desc: string;
+  };
   img: string;
   tags: string[];
   liveSite: string;
@@ -30,6 +33,8 @@ export default function Card({
   imageOrderDesktop = "right",
   className,
 }: CardProps) {
+  const { t } = useTranslation();
+
   return (
     <div
       className={twMerge(
@@ -43,8 +48,10 @@ export default function Card({
           ImageOrderDesktop[imageOrderDesktop].content,
         )}
       >
-        <h3 className="font-poppins text-3xl font-light">{cardData.title}</h3>
-        <p>{cardData.description}</p>
+        <h3 className="font-poppins text-3xl font-light">
+          {t(cardData.translationKeys.title)}
+        </h3>
+        <p>{t(cardData.translationKeys.desc)}</p>
 
         <ul className="flex flex-wrap gap-2">
           {cardData.tags?.map((tag) => (
