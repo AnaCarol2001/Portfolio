@@ -81,7 +81,7 @@ export default function Navbar() {
           href="mailto:"
           className="rounded-lg border border-main-purple px-4 py-2 font-bold text-main-purple"
         >
-          Contact Me
+          {t("contact")}
         </a>
       </div>
     </header>

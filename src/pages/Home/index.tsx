@@ -50,7 +50,7 @@ export default function Home() {
         <a className="text-2xl text-main-purple md:text-4xl" href="mailto:">
           anacaarolina@mail.com
         </a>
-        <p className="text-6xl md:text-9xl">Let's talk!</p>
+        <p className="text-6xl md:text-9xl">{t("footer")}</p>
       </footer>
     </div>
   );

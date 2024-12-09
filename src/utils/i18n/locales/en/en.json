@@ -3,6 +3,9 @@
     "about": "about",
     "projects": "projects"
   },
+  "dev": "Front-end developer",
+  "contact": "Contact me",
+  "footer": "Let's talk!",
   "hero": "Passionate about learning and always looking for new challenges ",
   "about": {
     "part1": "Hi! I am Ana Carolina, a front-end developer specializing in HTML, CSS, and JavaScript, and I am continuously enhancing my skills with modern frameworks like React.",

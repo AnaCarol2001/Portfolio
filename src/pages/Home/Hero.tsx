@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="order-2 grid justify-items-center gap-4 text-center md:order-1 md:content-center md:justify-items-start md:text-left">
         <h1 className="font-poppins text-5xl font-semibold text-black md:text-7xl lg:text-8xl">
           <span className="block font-sofiaSans text-2xl font-semibold text-main-purple md:text-3xl">
-            Front-end developer
+            {t("dev")}
           </span>{" "}
           Ana Carolina
         </h1>
