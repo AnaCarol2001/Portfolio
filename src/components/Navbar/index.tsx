@@ -3,7 +3,7 @@ import useMediaQuery from "@hooks/useMediaQuery";
 import Button from "../ui/Button";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import LangSwitcher from "@components/Navbar/langSwitcher";
+import LangSwitcher from "./LangSwitcher";
 
 export default function Navbar() {
   const isMobile = useMediaQuery("(max-width: 768px)");
