@@ -1,6 +1,9 @@
-import spaceImg from "@assets/spaceTourism.png";
-import easyBank from "@assets/easyBankProject.png";
-import countries from "@assets/countriesProject.png";
+import spaceImg from "@assets/spaceTourismProject_lg.png";
+import easyBank from "@assets/easyBankProject_lg.png";
+import countries from "@assets/countriesProject_lg.png";
+import spaceImgSm from "@assets/spaceTourismProject_sm.png";
+import easyBankSm from "@assets/easyBankProject_sm.png";
+import countriesSm from "@assets/countriesProject_sm.png";
 
 export const projects = [
   {
@@ -8,7 +11,7 @@ export const projects = [
       title: "projects.project1.title",
       desc: "projects.project1.desc",
     },
-    img: spaceImg,
+    img: { lg: spaceImg, sm: spaceImgSm },
     tags: ["HTML", "CSS", "JavaScript"],
     liveSite: "https://anacarol2001.github.io/SpaceTourismWebsite/",
     repo: "https://github.com/AnaCarol2001/SpaceTourismWebsite",
@@ -18,7 +21,7 @@ export const projects = [
       title: "projects.project2.title",
       desc: "projects.project2.desc",
     },
-    img: easyBank,
+    img: { lg: easyBank, sm: easyBankSm },
     tags: [
       "React",
       "Framer-motion",
@@ -34,7 +37,7 @@ export const projects = [
       title: "projects.project3.title",
       desc: "projects.project3.desc",
     },
-    img: countries,
+    img: { lg: countries, sm: countriesSm },
     tags: [
       "React",
       "React-router",
