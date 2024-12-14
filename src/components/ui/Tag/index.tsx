@@ -14,7 +14,7 @@ export default function Tag({ variant = "main-purple", ...props }: TagProps) {
   return (
     <span
       className={twMerge(
-        "inline-block text-nowrap rounded-lg px-2 py-1 font-bold md:px-4 md:py-2",
+        "inline-block text-nowrap rounded-lg px-2 py-1 text-sm font-bold",
         TagVariants[variant],
       )}
       {...props}
