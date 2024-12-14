@@ -25,7 +25,7 @@
     },
     "project3": {
       "title": "Where in the World? - SPA",
-      "desc": "Responsive single-page application (SPA) built with React, TypeScript, React Router, and React-query, styled using Tailwind CSS. The app integrates the REST Countries API, allowing users to view all countries on the home page, search for a specific country using an accessible search component (Combobox pattern), and filter countries by region. Users can click on a country to access a detailed information page, enhancing interactivity and engagement. Additionally, the app features a persisted light/dark theme toggle, providing a personalized and seamless user experience."
+      "desc": "Responsive single-page application (SPA) that integrates the REST Countries API, allowing users to view all countries on the home page, search for a specific country using an accessible search component, and filter countries by region. Users also can click on a country to access a detailed information page. Additionally, the app features a persisted light/dark theme toggle, providing a personalized and seamless user experience."
     }
   }
 }

@@ -17,7 +17,7 @@
     "desc": "Transformando designs em Websites responsivos, acessíveis e com animações.",
     "project1": {
       "title": "Space Tourism - SPA",
-      "desc": "Este aplicativo web é uma aplicação de página única (SPA) totalmente responsiva, desenvolvida apenas com HTML, CSS e JavaScript, a partir de um design fornecido pelo Frontend Mentor, apresentando uma interface de usuário limpa e intuitiva. O aplicativo possui quatro páginas: Home, Destinations, Crew, e Technology, cada uma projetada para imergir os usuários em uma fascinante exploração espacial. Ele inclui navegação fluida, abas acessíveis via teclado e animações atraentes para melhorar a usabilidade e a interatividade."
+      "desc": "Este é uma aplicação de página única (SPA) totalmente responsiva, desenvolvida apenas com HTML, CSS e JavaScript, a partir de um design fornecido pelo Frontend Mentor, apresentando uma interface de usuário limpa e intuitiva. O aplicativo possui quatro páginas: Home, Destinations, Crew, e Technology, cada uma projetada para imergir os usuários em uma fascinante exploração espacial. Ele inclui navegação fluida, abas acessíveis via teclado e animações atraentes para melhorar a usabilidade e a interatividade."
     },
     "project2": {
       "title": "EasyBank Landing Page",
@@ -25,7 +25,7 @@
     },
     "project3": {
       "title": "Where in the World? - SPA",
-      "desc": "Aplicação de página única (SPA) responsiva desenvolvida com React, TypeScript, React Router e React-query, estilizada com Tailwind CSS. O app integra a API REST Countries, permitindo que os usuários visualizem todos os países na página inicial, procurem por um país específico usando um componente de busca acessível (padrão Combobox) e filtrem os países por região. Os usuários podem clicar em um país para acessar uma página com informações detalhadas, aumentando a interatividade e o engajamento. Além disso, o app conta com um toggle de tema claro/escuro persistente, proporcionando uma experiência personalizada e fluida."
+      "desc": "Aplicação de página única (SPA) responsiva que integra a API REST Countries, permitindo que os usuários visualizem todos os países na página inicial, procurem por um país específico usando um componente de busca acessível e filtrem os países por região. Os usuários também podem clicar em um país para acessar uma página com informações detalhadas. Além disso, o app conta com um toggle de tema claro/escuro persistente, proporcionando uma experiência personalizada e fluida."
     }
   }
 }
