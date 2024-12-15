@@ -46,3 +46,4 @@ This is my personal website designed and developed by me to show case my project
 - [React Localization - Internationalize with i18next](https://locize.com/blog/react-i18next/)
 - [Localization In React - Make Your Websites International ](https://youtu.be/0GmDPAlwifs?si=2TKyCFZkymBYQyZy)
 - [React i18next (Complete Tutorial)](https://youtu.be/U4_P_l3L_EA?si=4WFl1rNmL8MRleaI)
+- [Making a CSS Only Infinite Text Marquee](https://youtu.be/uw5jVO1eNF8?si=6QO7WxeFbskWlFMR)

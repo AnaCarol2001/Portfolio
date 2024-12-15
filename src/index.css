@@ -6,4 +6,14 @@
   box-shadow: 0 -1px 8px rgba(255, 255, 255, 0.7) inset;
 }
 
+.fadeOutMask-horizontal {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    var(--mask-color, #4e31aa) var(--mask-size, 2rem),
+    var(--mask-color, #4e31aa) calc(100% - var(--mask-size, 2rem)),
+    transparent
+  );
+}
+
 @tailwind utilities;
