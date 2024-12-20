@@ -1,10 +1,8 @@
 import { useTranslation } from "react-i18next";
-import useMediaQuery from "@hooks/useMediaQuery";
 import FlipWord from "@components/ui/AnimatedComponents/FlipWord";
 
 export default function Footer() {
   const { t } = useTranslation();
-  const isMobile = useMediaQuery("(max-width: 640px)");
   const footerTextArr = t("footer").split(" ");
 
   return (
@@ -39,27 +37,26 @@ export default function Footer() {
               LinkedIn
             </a>
           </li>
-          {isMobile && (
-            <li>
-              <a
-                href="mailto:anacarolina2001.trabalho@gmail.com"
-                target="_blank"
-                className="flex items-center gap-2"
-              >
-                Email
-              </a>
-            </li>
-          )}
+
+          <li className="sm:hidden">
+            <a
+              href="mailto:anacarolina2001.trabalho@gmail.com"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              Email
+            </a>
+          </li>
         </ul>
       </div>
-      {!isMobile && (
-        <a
-          className="text-3xl text-main-purple md:text-4xl"
-          href="mailto:anacarolina2001.trabalho@gmail.com"
-        >
-          anacarolina2001.trabalho@gmail.com
-        </a>
-      )}
+
+      <a
+        className="hidden text-3xl text-main-purple sm:block md:text-4xl"
+        href="mailto:anacarolina2001.trabalho@gmail.com"
+      >
+        anacarolina2001.trabalho@gmail.com
+      </a>
+
       <p className="text-5xl font-extrabold uppercase sm:text-6xl lg:text-[5rem]">
         <span className="sr-only">{t("footer")}</span>
         <span
