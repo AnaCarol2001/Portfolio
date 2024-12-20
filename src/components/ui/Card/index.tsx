@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ComponentProps, useRef } from "react";
+import Reveal from "@components/ui/AnimatedComponents/Reveal";
 
 type CardData = {
   translationKeys: {
@@ -61,37 +62,44 @@ export default function Card({
           ImageOrderDesktop[imageOrderDesktop].content,
         )}
       >
-        <h3 className="font-poppins text-2xl font-medium lg:text-3xl">
-          {t(cardData.translationKeys.title)}
-        </h3>
-        <p className="text-sm lg:text-base">
-          {t(cardData.translationKeys.desc)}
-        </p>
+        <Reveal bg="none">
+          <h3 className="font-poppins text-2xl font-medium lg:text-3xl">
+            {t(cardData.translationKeys.title)}
+          </h3>
+        </Reveal>
+        <Reveal bg="none">
+          <p className="text-sm lg:text-base">
+            {t(cardData.translationKeys.desc)}
+          </p>
+        </Reveal>
 
-        <ul className="flex flex-wrap gap-2">
-          {cardData.tags?.map((tag) => (
-            <li key={tag}>
-              <Tag variant="white">{tag}</Tag>
-            </li>
-          ))}
-        </ul>
-
-        <div className="flex gap-4">
-          <a
-            href={cardData.liveSite}
-            target="_blank"
-            className="flex items-center gap-2 p-2"
-          >
-            <ArrowUp /> Website
-          </a>
-          <a
-            href={cardData.repo}
-            target="_blank"
-            className="flex items-center gap-2 p-2"
-          >
-            <Code /> Repository
-          </a>
-        </div>
+        <Reveal bg="none">
+          <ul className="flex flex-wrap gap-2">
+            {cardData.tags?.map((tag) => (
+              <li key={tag}>
+                <Tag variant="white">{tag}</Tag>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+        <Reveal bg="none">
+          <div className="flex gap-4">
+            <a
+              href={cardData.liveSite}
+              target="_blank"
+              className="flex items-center gap-2 p-2"
+            >
+              <ArrowUp /> Website
+            </a>
+            <a
+              href={cardData.repo}
+              target="_blank"
+              className="flex items-center gap-2 p-2"
+            >
+              <Code /> Repository
+            </a>
+          </div>
+        </Reveal>
       </div>
       <picture
         className={twMerge(

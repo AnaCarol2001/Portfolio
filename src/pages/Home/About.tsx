@@ -1,6 +1,7 @@
 import Tag from "@components/ui/Tag";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import Reveal from "@components/ui/AnimatedComponents/Reveal";
 
 const tags = [
   "HTML",
@@ -30,15 +31,23 @@ export default function About() {
     >
       <div className="mx-auto mb-10 max-w-3xl px-4">
         <div className="space-y-4">
-          <h2 className="font-poppins text-5xl font-semibold">
-            {t("about.title")}
-          </h2>
-          <p>{t("about.part1")}</p>
-          <p>{t("about.part2")}</p>
-          <p>{t("about.part3")}</p>
+          <Reveal bg="white">
+            <h2 className="font-poppins text-5xl font-semibold">
+              {t("about.title")}
+            </h2>
+          </Reveal>
+          <Reveal bg="white">
+            <p>{t("about.part1")}</p>
+          </Reveal>
+          <Reveal bg="white">
+            <p>{t("about.part2")}</p>
+          </Reveal>
+          <Reveal bg="white">
+            <p>{t("about.part3")}</p>
+          </Reveal>
         </div>
       </div>
-      <div className="fadeOutMask-horizontal overflow-clip md:-skew-y-2 md:[--mask-size:5rem]">
+      <div className="fadeOutMask-horizontal overflow-clip md:-skew-y-3 md:[--mask-size:5rem]">
         <motion.ul
           className="flex w-max gap-4 pl-4 [--translateX:-50%] md:gap-10 md:pl-10"
           animate={{ translateX: "var(--translateX, 0)" }}
