@@ -52,3 +52,5 @@ This is my personal website designed and developed by me to show case my project
 - [On-Scroll Reveal Animation with React & Framer Motion](https://youtu.be/hjbxaYTMhy0?si=jZ_8JVj3p52i7GIj)
 - [Complex Animations with Framer Motion & React || useAnimate Hook](https://youtu.be/Ec03ndZle3Q?si=Ao0v-jvtl6xg0VwU)
 - [Mouse Hover Tilt Card Effect || React, Framer Motion & Tailwind CSS](https://youtu.be/-PBw8mv9ZYc?si=io2B-BXoxUmNMLxj)
+- [Narrowing - Discriminated Unions](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#discriminated-unions)
+- [Hide Navigation on Page Scroll || Framer Motion useMotionValueEvent](https://youtu.be/qc2kQcicNNc?si=_GK-qLWcCBhHTd6I)

@@ -1,4 +1,5 @@
 {
+  "lang": "select language",
   "links": {
     "about": "about",
     "projects": "projects"
