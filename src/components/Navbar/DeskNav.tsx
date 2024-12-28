@@ -37,12 +37,18 @@ export default function DeskNav() {
         <nav id="main-nav" className="font-semibold">
           <ul className="flex gap-8 capitalize">
             <li>
-              <a className="active:text-main-purple" href="#about">
+              <a
+                className="inline-block hover:scale-105 focus-visible:scale-105 active:text-main-purple"
+                href="#about"
+              >
                 {t("links.about")}
               </a>
             </li>
             <li>
-              <a className="active:text-main-purple" href="#projects">
+              <a
+                className="inline-block hover:scale-105 focus-visible:scale-105 active:text-main-purple"
+                href="#projects"
+              >
                 {t("links.projects")}
               </a>
             </li>

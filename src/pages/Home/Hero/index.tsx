@@ -14,7 +14,7 @@ export default function Hero() {
           className="font-poppins text-6xl font-semibold text-black md:text-7xl lg:text-8xl"
         >
           <Reveal>
-            <span className="block font-sofiaSans text-xl font-semibold text-main-purple md:mb-3 md:text-2xl lg:text-3xl">
+            <span className="block font-sofiaSans text-xl font-semibold text-main-purple md:mb-3 md:text-2xl">
               {t("dev")}
             </span>
           </Reveal>
@@ -26,8 +26,9 @@ export default function Hero() {
           <p className="text-base">{t("hero")}</p>
         </Reveal>
         <Reveal>
-          <div className="flex items-center gap-4 text-main-purple">
+          <div className="flex items-center gap-2 text-main-purple *:m-1">
             <a
+              className="transition-colors duration-500 hover:text-black focus-visible:text-black"
               aria-label="GitHub"
               target="_blank"
               href="https://github.com/AnaCarol2001"
@@ -35,13 +36,17 @@ export default function Hero() {
               <GitHub />
             </a>
             <a
+              className="transition-colors duration-500 hover:text-black focus-visible:text-black"
               aria-label="LinkedIn"
               target="_blank"
               href="https://www.linkedin.com/in/ana-carolina-d-sanches"
             >
               <LinkedIn />
             </a>
-            <a href="mailto:anacarolina2001.trabalho@gmail.com">
+            <a
+              className="transition-colors duration-500 hover:text-black focus-visible:text-black"
+              href="mailto:anacarolina2001.trabalho@gmail.com"
+            >
               <Email />
             </a>
           </div>

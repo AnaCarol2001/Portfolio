@@ -87,14 +87,14 @@ export default function Card({
             <a
               href={cardData.liveSite}
               target="_blank"
-              className="flex items-center gap-2 p-2"
+              className="m-2 flex items-center gap-2 hover:scale-105 focus-visible:scale-105"
             >
               <ArrowUp /> Website
             </a>
             <a
               href={cardData.repo}
               target="_blank"
-              className="flex items-center gap-2 p-2"
+              className="m-2 flex items-center gap-2 hover:scale-105 focus-visible:scale-105"
             >
               <Code /> Repository
             </a>

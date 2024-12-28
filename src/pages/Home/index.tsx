@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative overflow-clip">
       <div aria-hidden="true" className="-z-50 overflow-hidden">
         <div className="absolute left-[-13rem] top-[-3rem] h-64 w-[28rem] rounded-full bg-main-purple blur-[250px] backdrop-filter"></div>
-        <div className="absolute right-[-7rem] top-[3.5rem] h-64 w-[28rem] rounded-full bg-main-purple blur-[250px] backdrop-filter"></div>
+        {/* <div className="absolute right-[-7rem] top-[3.5rem] h-64 w-[28rem] rounded-full bg-main-purple blur-[250px] backdrop-filter"></div> */}
       </div>
       <Navbar />
       <main>
