@@ -35,7 +35,7 @@ export default function ProjectsSmScreen() {
         <motion.div
           initial="initial"
           whileInView="inView"
-          viewport={{ amount: 0.2, once: true }}
+          viewport={{ once: true, margin: "50px" }}
           variants={animationVariant}
         >
           <Card
@@ -47,7 +47,7 @@ export default function ProjectsSmScreen() {
         <motion.div
           initial="initial"
           whileInView="inView"
-          viewport={{ amount: 0.2, once: true }}
+          viewport={{ once: true, margin: "50px" }}
           variants={animationVariant}
         >
           <Card
@@ -60,7 +60,7 @@ export default function ProjectsSmScreen() {
         <motion.div
           initial="initial"
           whileInView="inView"
-          viewport={{ amount: 0.2, once: true }}
+          viewport={{ once: true, margin: "50px" }}
           variants={animationVariant}
         >
           <Card

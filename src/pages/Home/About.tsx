@@ -27,7 +27,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative scroll-m-12 py-20 text-white before:absolute before:inset-0 before:z-[-1] before:-skew-y-3 before:bg-main-purple md:py-20"
+      className="relative scroll-m-12 py-20 text-white before:absolute before:inset-0 before:z-[-1] before:-skew-y-3 before:bg-main-purple md:pb-10 md:pt-20"
     >
       <div className="mx-auto mb-10 max-w-3xl px-4">
         <div className="space-y-4">
@@ -47,7 +47,7 @@ export default function About() {
           </Reveal>
         </div>
       </div>
-      <div className="fadeOutMask-horizontal overflow-clip md:-skew-y-3 md:[--mask-size:5rem]">
+      <div className="fadeOutMask-horizontal overflow-clip md:-skew-y-3 md:py-5 md:[--mask-size:5rem]">
         <motion.ul
           className="flex w-max gap-4 pl-4 [--translateX:-50%] md:gap-10 md:pl-10"
           animate={{ translateX: "var(--translateX, 0)" }}
