@@ -1,6 +1,6 @@
 # My Portfolio
 
-This is my personal website designed and developed by me to show case my projects and coding skills.
+This is my portfolio website designed and developed by me to show case my projects and coding skills.
 
 ## Table of contents
 
@@ -14,6 +14,8 @@ This is my personal website designed and developed by me to show case my project
   - [Useful resources](#useful-resourses)
 
 ### Screenshot
+
+<img src="./public/screenshot.png"  style="max-width: 700px; width: 100%"/>
 
 ### Link
 
@@ -36,7 +38,17 @@ This is my personal website designed and developed by me to show case my project
 
 ### What I learned
 
+Throughout the development of my portfolio, I gained valuable insights in several key areas:
+
+- **Internationalization:** By integrating React i18next, I learned how to make my portfolio easily adaptable to English and Portuguese, enabling a seamless experience for a larger audience.
+
+- **Component Style Variants:** I designed flexible and responsive components using the Tailwind framework, and by leveraging Tailwind merge and TypeScript's Record type, I learned to dynamically handle different styles based on props, allowing me to reuse components efficiently across my portfolio.
+
+- **Animations with Tailwind and Framer Motion:** I explored the power of animations in creating an engaging user experience. Using Tailwind, I applied subtle yet effective transitions. Framer Motion enhanced this further with advanced effects like reveal animations, staggered text, mouse-triggered 3D tilt card, scroll-triggered stacked cards, and dynamic hide/show behavior for the navbar on scroll. These animations brought my portfolio to life, adding a modern touch and smooth transitions.
+
 ### Continued development
+
+I enjoy exploring 3D design in my free time by learning about tools like Blender and Spline to create 3D content. I'm also learning WebGL and Three.js to bring 3D experiences to the web. My goal is to build an immersive 3D website eventually.
 
 ### Useful resources
 
